@@ -639,6 +639,7 @@ h2.resp-accordion {
 .about-imag img {
   border: 2px solid #ef664d;
   border-radius: 103px;
+  width: 100%;
 }
 .about-text {
   float: left;
