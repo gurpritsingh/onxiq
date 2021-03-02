@@ -1020,8 +1020,8 @@ h2.resp-accordion {
     width: 80%;
   }
   .about-text p {
-    height: 65px;
-    overflow: hidden;
+    /* height: 65px;
+    overflow: hidden; */
   }
   .about-sectiongrids {
     padding: 25px 0px;
@@ -1184,8 +1184,8 @@ h2.resp-accordion {
     top: -30px;
   }
   .about-text p {
-    height: 46px;
-    overflow: hidden;
+    /* height: 46px;
+    overflow: hidden; */
   }
   .about-header h3 {
     font-size: 1.5em;
@@ -1302,8 +1302,8 @@ h2.resp-accordion {
     font-size: 1.4em;
   }
   .services-header p {
-    height: 66px;
-    overflow: hidden;
+    /* height: 66px;
+    overflow: hidden; */
   }
   .services-grid h4 {
     font-size: 1em;
@@ -1470,8 +1470,8 @@ h2.resp-accordion {
     padding: 1em 0;
   }
   .about-text p {
-    height: 37px;
-    overflow: hidden;
+    /* height: 37px;
+    overflow: hidden; */
     font-size: 0.9em;
   }
   .about-imag {
@@ -1565,4 +1565,9 @@ h2.resp-accordion {
   .grid_box a:hover .zoom-icon {
     top: 7px;
   }
+}
+
+.about-text p,
+.services-header p {
+  text-align: left;
 }
