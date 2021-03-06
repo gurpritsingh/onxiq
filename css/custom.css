@@ -1,21 +1,3 @@
-/* .top-menu .sub-menu {
-  color: #fff;
-  position: absolute;
-  display: none;
-}
-
-.top-menu ul.sub-menu > li {
-  display: block;
-}
-
-.top-menu ul > nav > li:hover .sub-menu {
-  display: block;
-}
-
-.top-menu ul li {
-  position: relative;
-} */
-
 .sub-menu-alt {
   display: none;
   position: absolute;
@@ -48,7 +30,7 @@
 }
 
 .sub-menu-nav ul {
-  background-color: #404b5d;
+  background-color: #2e3e4e;
 }
 .sub-menu-nav ul li a {
   display: block;
@@ -58,6 +40,14 @@
   padding-left: 0.5em;
 }
 
+.digi {
+  height: 370px !important;
+}
 .banner-wrap {
-  padding-top: 13em;
+  padding-top: 20em;
+}
+
+.wmuSliderPrev,
+.wmuSliderNext {
+  top: 144px;
 }
