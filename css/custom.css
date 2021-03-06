@@ -1,0 +1,63 @@
+/* .top-menu .sub-menu {
+  color: #fff;
+  position: absolute;
+  display: none;
+}
+
+.top-menu ul.sub-menu > li {
+  display: block;
+}
+
+.top-menu ul > nav > li:hover .sub-menu {
+  display: block;
+}
+
+.top-menu ul li {
+  position: relative;
+} */
+
+.sub-menu-alt {
+  display: none;
+  position: absolute;
+}
+
+.sub-menu-nav:hover .sub-menu-alt {
+  display: block;
+}
+
+/* <div class="sub-menu-nav">
+		<button class="nav-btn">About</button>
+		<div class="sub-menu-alt">
+		  <a href="#">Company</a>
+		  <a href="#">Team</a>
+		  <a href="#">References</a>
+		</div>
+	  </div>  */
+
+.rpo .header {
+  min-height: 85px !important;
+  height: 85px !important;
+}
+
+.rpo .header-top {
+  padding-top: 1.5em;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.sub-menu-nav ul {
+  background-color: #404b5d;
+}
+.sub-menu-nav ul li a {
+  display: block;
+}
+.sub-menu-nav ul li {
+  display: block;
+  padding-left: 0.5em;
+}
+
+.banner-wrap {
+  padding-top: 13em;
+}
