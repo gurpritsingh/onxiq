@@ -1103,7 +1103,7 @@ h2.resp-accordion {
   .top-menu ul li {
     padding: 15px 0;
   }
-  .top-menu ul {
+  .top-menu > ul {
     margin: 15px 0;
     z-index: 999;
     position: absolute;
@@ -1131,7 +1131,7 @@ h2.resp-accordion {
   .top-menu ul li a {
     font-size: 14px;
   }
-  .top-menu ul {
+  .top-menu > ul {
     width: 95%;
   }
   .banner_center {
@@ -1258,7 +1258,7 @@ h2.resp-accordion {
   .logo img {
     width: 80%;
   }
-  .top-menu ul {
+  .top-menu > ul {
     width: 93%;
     margin: 19px 0;
   }

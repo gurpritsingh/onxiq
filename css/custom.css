@@ -51,3 +51,14 @@
 .wmuSliderNext {
   top: 144px;
 }
+
+@media (max-width: 768px) {
+  .sub-menu-nav {
+    position: relative;
+  }
+
+  .top-menu ul.sub-menu-alt {
+    position: static;
+    margin: 0;
+  }
+}

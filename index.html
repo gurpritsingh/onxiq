@@ -25,7 +25,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
 				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+				if (this.hash)
+					$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
 			});
 		});
 	</script>
@@ -51,8 +52,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
 							<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
 							<li><a href="#work" class="scroll"><span data-hover="Client"><span>client</span></a></li>
-							<li class="sub-menu-nav">
-								<a href="#services" class="scroll"><span data-hover="services">services</span></a>
+							<li class="sub-menu-nav" style="position: relative;">
+								<a href="javascript:void(0)" class="scroll"><span
+										data-hover="services">services</span></a>
 								<ul class="sub-menu-alt">
 									<li class="d-block"><a href="rpo.html"><span data-hover="rpo">rpo</span></a>
 									</li>
@@ -70,7 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!--script-nav-->
 				<script>
 					$("span.menu").click(function () {
-						$(".top-menu ul").slideToggle("slow", function () {
+						$(".top-menu > ul").slideToggle(300, function () {
 						});
 					});
 				</script>
@@ -111,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<script src="js/jquery.wmuSlider.js"></script>
 				<script>
-					$('.example1').wmuSlider();         
+					$('.example1').wmuSlider();
 				</script>
 			</div>
 		</div>
@@ -654,6 +656,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			xhr.send(data);
 		}
 	</script>
+	<script src="js/custom.js"></script>
 </body>
 
 </html>
