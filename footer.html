@@ -1,0 +1,123 @@
+<div class="container">
+    <div class="contact-header">
+        <h3> contact</h3>
+        <p>Indian Corporate Headquarters
+            ONXiq Technologies pvt. ltd
+            B-1649, Sec-48
+            Haryana – 121001
+        </p>
+        <p style="padding: 0;"><a href="mailto:paddy@onxiq.com" style="color: #fff;">paddy@onxiq.com</a>
+        </p>
+        <p style="padding: 0; padding-top: 5px;">
+            <a href="tel:+19173965276" style="color: #fff;">+1 (917) 396-5276(US)</a> <br>
+            <a href="tel:+919990466789" style="color: #fff;">+91 999-046-6789 (India)</a>
+
+        </p>
+    </div>
+    <div class="social-icon">
+        <!-- <a href="#"><i class="icon1"></i></a>
+        <a href="#"><i class="icon2"></i></a>
+        <a href="#"><i class="icon3"></i></a>
+        <a href="#"><i class="icon4"></i></a>
+        <a href="#"><i class="icon5"></i></a>
+        <a href="#"><i class="icon6"></i></a>
+        <a href="#"><i class="icon7"></i></a>
+        <a href="#"><i class="icon8"></i></a> -->
+    </div>
+    <div class="contact">
+        <form id="my-form" action="https://formspree.io/f/mdoprazw" method="POST">
+            <div class="col-md-4 contactgrid">
+                <input type="text" class="text" name="name" value=" name" onfocus="this.value = '';"
+                    onblur="if (this.value == '') {this.value = ' name';}">
+            </div>
+            <div class="col-md-4 contactgrid">
+                <input type="text" class="text" name="email" value="email" onfocus="this.value = '';"
+                    onblur="if (this.value == '') {this.value = 'email';}">
+            </div>
+            <div class="col-md-4 contactgrid">
+                <input type="text" class="text" name="phone" value="phone" onfocus="this.value = '';"
+                    onblur="if (this.value == '') {this.value = 'phone';}">
+            </div>
+            <div class="col-md-8 contactgrid1">
+                <textarea name="message" onfocus="if(this.value == 'Your Message') this.value='';"
+                    onblur="if(this.value == '') this.value='Your Message';">Your Message</textarea>
+            </div>
+            <div class="col-md-4 contactgrid2">
+                <input type="submit" id="my-form-button" value="[send message]">
+            </div>
+            <div class="clearfix"></div>
+            <p id="my-form-status" style="color: #fff;font-weight: bold;"></p>
+        </form>
+        <script>
+            window.addEventListener("DOMContentLoaded", function () {
+
+                // get the form elements defined in your form HTML above
+
+                var form = document.getElementById("my-form");
+                var button = document.getElementById("my-form-button");
+                var status = document.getElementById("my-form-status");
+
+                // Success and Error functions for after the form is submitted
+
+                function success() {
+                    form.reset();
+                    button.style = "display: none ";
+                    status.innerHTML = "Thanks!";
+                    setTimeout(function () {
+                        status.innerHTML = "";
+                    }, 5000)
+                }
+
+                function error() {
+                    status.innerHTML = "Oops! There was a problem.";
+                }
+
+                // handle the form submission event
+
+                form.addEventListener("submit", function (ev) {
+                    ev.preventDefault();
+                    var data = new FormData(form);
+                    ajax(form.method, form.action, data, success, error);
+                });
+            });
+
+            // helper function for sending an AJAX request
+
+            function ajax(method, url, data, success, error) {
+                var xhr = new XMLHttpRequest();
+                xhr.open(method, url);
+                xhr.setRequestHeader("Accept", "application/json");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                    if (xhr.status === 200) {
+                        success(xhr.response, xhr.responseType);
+                    } else {
+                        error(xhr.status, xhr.response, xhr.responseType);
+                    }
+                };
+                xhr.send(data);
+            }
+        </script>
+    </div>
+    <div class="footer-bottom">
+
+        <!-- <p>&copy; 2021. All rights Reserved</p> -->
+
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                    containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+                };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>

@@ -46,28 +46,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="top-menu">
 					<span class="menu"> </span>
-					<nav>
-						<ul>
-							<li><a class="" href="index.html"><span data-hover="Home">home</span></a></li>
+					<ul>
+						<nav class="cl-effect-5">
+							<li><a href="index.html"><span data-hover="Home">home</span></a></li>
 							<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
 							<li><a href="#work" class="scroll"><span data-hover="Client"><span>client</span></a></li>
-							<li class="sub-menu-nav">
-								<a class="active" href="#services">Services</a>
+							<li class="sub-menu-nav" style="position: relative;">
+								<a href="javascript:void(0)" class="scroll active"><span
+										data-hover="services">services</span></a>
 								<ul class="sub-menu-alt">
-									<li class="d-block active"><a class="" href="rpo.html">RPO</a></li>
-									<li class="d-block"><a class="active" href="staffing_consulting.html">Staffing &
-											Consulting</a>
+									<li class="d-block"><a href="rpo.html"><span data-hover="rpo">rpo</span></a>
+									</li>
+									<li class="d-block">
+										<a href="staffing_consulting.html" class="active">
+											<span data-hover="Staffing & Consulting">Staffing_&_Consulting</span>
+										</a>
 									</li>
 								</ul>
 							</li>
 							<li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
-						</ul>
-					</nav>
+						</nav>
+					</ul>
 				</div>
 				<!--script-nav-->
 				<script>
 					$("span.menu").click(function () {
-						$(".top-menu ul").slideToggle("slow", function () {
+						$(".top-menu > ul").slideToggle(300, function () {
 						});
 					});
 				</script>

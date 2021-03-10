@@ -1,0 +1,40 @@
+<div class="logo" style="position: relative;">
+    <a href="index.html"
+        style="font-family: 'Stardos Stencil', cursive; font-size: 27px; color: #fff; font-weight: 700;">
+        <!-- <img src="images/logo.png" alt="" /> -->ONX
+    </a>
+    <small
+        style="color: #fff;position: absolute;bottom: -7px;white-space: nowrap;left: 0;font-style: italic; font-size: 75%;">ONX
+        Intelligence quotient</small>
+</div>
+<div class="top-menu">
+    <span class="menu"> </span>
+    <ul>
+        <nav class="cl-effect-5">
+            <li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
+            <li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
+            <li><a href="#work" class="scroll"><span data-hover="Client"><span>client</span></a></li>
+            <li class="sub-menu-nav">
+                <a href="#services" class="scroll"><span data-hover="services">services</span></a>
+                <ul class="sub-menu-alt">
+                    <li class="d-block"><a href="rpo.html"><span data-hover="rpo">rpo</span></a>
+                    </li>
+                    <li class="d-block">
+                        <a href="staffing_consulting.html">
+                            <span data-hover="Staffing & Consulting">Staffing_&_Consulting</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
+        </nav>
+    </ul>
+</div>
+<!--script-nav-->
+<script>
+    $("span.menu").click(function () {
+        $(".top-menu ul").slideToggle("slow", function () {
+        });
+    });
+</script>
+<div class="clearfix"></div>
