@@ -25,7 +25,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
 				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+				if ($(this.hash).length)
+					$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+				else {
+					window.open(this.href, "_self");
+				}
 			});
 		});
 	</script>
@@ -49,8 +53,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul>
 						<nav class="cl-effect-5">
 							<li><a href="index.html"><span data-hover="Home">home</span></a></li>
-							<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
-							<li><a href="#work" class="scroll"><span data-hover="Client"><span>client</span></a></li>
+							<li><a href="index.html#about" class="scroll"><span data-hover="about">about</span></a></li>
+							<li><a href="index.html#work" class="scroll"><span
+										data-hover="Client"><span>client</span></a></li>
 							<li class="sub-menu-nav" style="position: relative;">
 								<a class="active" href="javascript:void(0)" class="scroll"><span
 										data-hover="services">services</span></a>
