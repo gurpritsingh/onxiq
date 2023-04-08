@@ -63,11 +63,15 @@
   }
 }
 
-.clients-logo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 .clients-logo img {
-  margin-top: 10px;
+  width: 30%;
+  max-width: 200px;
+  margin-left: 20px;
+}
+
+.rpo-img {
+  width: 30%;
+  float: left;
+  padding-top: 25px;
+	padding-right: 10px;
 }
