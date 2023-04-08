@@ -1394,6 +1394,10 @@ h2.resp-accordion {
     width: unset;
     margin-right: 0;
   }
+  .about-text {
+    float: unset;
+    width: unset;
+  }
 }
 @media (max-width: 320px) {
   .header-top {
